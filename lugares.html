@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lugares turísticos de Granada</title>
+    <!-- Asegúrate de que estos archivos existan en tu proyecto -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Guía turística — Granada</h1>
+            <p class="lead">Galería de lugares imprescindibles con breves descripciones</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="gallery" class="gallery-grid">
+            <!-- Cada item tiene atributos data para que el JS pueda usarlos (título, descripción, imagen grande) -->
+            <figure class="gallery-item" tabindex="0"
+                            data-title="La Alhambra"
+                            data-desc="Palacio y fortaleza nazarí, ejemplo máximo del arte islámico en España. Imperdible por sus palacios, patios y la Alcazaba."
+                            data-large="imagenes/alhambra.jpg">
+                <img src="imagenes/alhambra-thumb.jpg" alt="La Alhambra, Granada" />
+                <figcaption>La Alhambra</figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0"
+                            data-title="Generalife"
+                            data-desc="Jardines anexos a la Alhambra, famosos por sus fuentes, terrazas y el cuidado paisajismo."
+                            data-large="imagenes/generalife.jpg">
+                <img src="imagenes/generalife-thumb.jpg" alt="Jardines del Generalife" />
+                <figcaption>Generalife</figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0"
+                            data-title="Albaicín"
+                            data-desc="Barrio histórico de calles empedradas y casas blancas con patios. Conserva la esencia morisca de Granada."
+                            data-large="imagenes/albaicin.jpg">
+                <img src="imagenes/albaicin-thumb.jpg" alt="Barrio del Albaicín" />
+                <figcaption>Albaicín</figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0"
+                            data-title="Mirador de San Nicolás"
+                            data-desc="Uno de los miradores más famosos con vistas panorámicas de la Alhambra y la sierra nevada."
+                            data-large="imagenes/san-nicolas.jpg">
+                <img src="imagenes/san-nicolas-thumb.jpg" alt="Mirador de San Nicolás" />
+                <figcaption>Mirador de San Nicolás</figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0"
+                            data-title="Catedral de Granada"
+                            data-desc="Imponente catedral renacentista en el centro histórico con fachada y capillas destacadas."
+                            data-large="imagenes/catedral.jpg">
+                <img src="imagenes/catedral-thumb.jpg" alt="Catedral de Granada" />
+                <figcaption>Catedral de Granada</figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0"
+                            data-title="Sacromonte"
+                            data-desc="Barrio famoso por sus cuevas, flamenco y vistas sobre la ciudad. Interesante por su cultura gitana."
+                            data-large="imagenes/sacromonte.jpg">
+                <img src="imagenes/sacromonte-thumb.jpg" alt="Sacromonte, Granada" />
+                <figcaption>Sacromonte</figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0"
+                            data-title="Parque de las Ciencias"
+                            data-desc="Museo interactivo de ciencias, ideal para familias y curiosos de todas las edades."
+                            data-large="imagenes/parque-ciencias.jpg">
+                <img src="imagenes/parque-ciencias-thumb.jpg" alt="Parque de las Ciencias" />
+                <figcaption>Parque de las Ciencias</figcaption>
+            </figure>
+
+            <figure class="gallery-item" tabindex="0"
+                            data-title="Carmen de los Mártires"
+                            data-desc="Jardines románticos con rincones tranquilos y vistas a la ciudad y Sierra Nevada."
+                            data-large="imagenes/carmen-martires.jpg">
+                <img src="imagenes/carmen-martires-thumb.jpg" alt="Carmen de los Mártires" />
+                <figcaption>Carmen de los Mártires</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <!-- Lightbox / modal que el JS puede controlar -->
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+        <div class="lightbox-content">
+            <img class="lightbox-img" src="" alt="" />
+            <div class="lightbox-meta">
+                <h2 class="lightbox-title"></h2>
+                <p class="lightbox-desc"></p>
+            </div>
+        </div>
+        <button class="lightbox-prev" aria-label="Anterior">&#10094;</button>
+        <button class="lightbox-next" aria-label="Siguiente">&#10095;</button>
+    </div>
+
+    <footer class="site-footer container">
+        <p>&copy; Guía turística — Granada</p>
+        <p><a href="index.html">Volver al índice</a></p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
