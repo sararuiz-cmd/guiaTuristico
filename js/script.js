@@ -172,3 +172,4 @@ p{ color:var(--muted); margin:0 0 12px 0; }
   .tour-card{ grid-template-columns: 1fr; }
   .container{ padding:16px; margin:18px auto; }
 }
+
